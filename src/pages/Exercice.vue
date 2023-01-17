@@ -2,7 +2,7 @@
 <!--
 Exercice 3 - Vuex & Formulaires
 
-1) Créer un magasin, module, Vuex avec le namespace "taches" pour les plats
+1) Créer un magasin, module, Vuex avec le namespace "plats" pour les plats
    dans src/store/ et y ajouter le tableau des plats.
 
 2) Créer un getter pour récupérer les plats
