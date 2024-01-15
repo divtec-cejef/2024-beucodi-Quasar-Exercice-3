@@ -62,20 +62,17 @@
 </q-card>
 </template>
 
-<script>
-export default {
-  props: ['action'],
-  data () {
-    return {
-      plat: {
-        name: '',
-        description: '',
-        note: 1,
-        image: ''
-      }
-    }
-  }
-}
+<script setup>
+import { ref } from 'vue'
+
+const { action } = defineProps(['action'])
+
+const plat = ref({
+  name: '',
+  description: '',
+  note: 1,
+  image: ''
+})
 </script>
 
 <style>

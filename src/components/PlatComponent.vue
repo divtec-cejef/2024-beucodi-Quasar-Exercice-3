@@ -41,51 +41,52 @@
 
   <q-dialog
     v-model="afficherFormPlat">
-    <form-plat action="modifier" />
+    <FormPlat action="modifier" />
   </q-dialog>
 </q-card>
 </template>
 
-<script>
-export default {
-  props: ['plat'],
-  data () {
-    return {
-      afficherFormPlat: false
-    }
-  },
-  components: {
-    'form-plat': require('components/FormPlat.vue').default
-  }
-}
+<script setup>
+import { ref } from 'vue'
+import FormPlat from 'components/FormPlat.vue'
+
+const afficherFormPlat = ref(false)
+const { plat } = defineProps(['plat'])
 </script>
 
-<style>
+<style lang="scss">
 .card {
   min-height: 400px;
   max-width: 250px;
   width: 250px;
   transition: background 0.3s;
+
+  .q-img {
+    max-height: 180px;
+  }
+
+  .q-img__image {
+    background-size: cover !important;
+  }
+
+  .q-rating__icon {
+    opacity: 0.2;
+  }
+
+  .q-rating__icon--active {
+    opacity: 1;
+  }
+
+  .description {
+    padding: 5px 16px;
+  }
 }
+
 .card-clickable {
   cursor: pointer;
-}
-.card-clickable:hover {
-  background: #bdbdbd!important;
-}
-.card .q-img {
-  max-height: 180px;
-}
-.card .q-img__image {
-  background-size: cover !important;
-}
-.card .q-rating__icon {
-  opacity: 0.2;
-}
-.card .q-rating__icon--active {
-  opacity: 1;
-}
-.card .description {
-  padding: 5px 16px;
+
+  &:hover {
+    background: #bdbdbd !important;
+  }
 }
 </style>

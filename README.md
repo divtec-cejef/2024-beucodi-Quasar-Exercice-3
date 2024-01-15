@@ -1,6 +1,6 @@
-# Exercice 3 (ch.divtec.2022_sfa_quasar_exercice_3)
+# Quasar App (beucodi_quasar_ex3)
 
-A Quasar Project
+Projet pour l'exercice 3 de la formation pour Quasar
 
 ## Install the dependencies
 ```bash
@@ -30,4 +30,4 @@ quasar build
 ```
 
 ### Customize the configuration
-See [Configuring quasar.config.js](https://v2.quasar.dev/quasar-cli-webpack/quasar-config-js).
+See [Configuring quasar.config.js](https://v2.quasar.dev/quasar-cli-vite/quasar-config-js).

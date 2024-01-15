@@ -15,7 +15,7 @@
           Quasar | Exercice 3
         </q-toolbar-title>
 
-        <div>Vuex & Formulaires</div>
+        <div>Pinia & Formulaires</div>
       </q-toolbar>
     </q-header>
 
@@ -51,20 +51,12 @@
   </q-layout>
 </template>
 
-<script>
-import { defineComponent, ref } from 'vue'
+<script setup>
+import { ref } from 'vue'
 
-export default defineComponent({
-  name: 'MainLayout',
-  setup () {
-    const leftDrawerOpen = ref(false)
+const leftDrawerOpen = ref(false)
 
-    return {
-      leftDrawerOpen,
-      toggleLeftDrawer () {
-        leftDrawerOpen.value = !leftDrawerOpen.value
-      }
-    }
-  }
-})
+const toggleLeftDrawer = () => {
+  leftDrawerOpen.value = !leftDrawerOpen.value
+}
 </script>
