@@ -5,8 +5,7 @@ Exercice 3 - Pinia & Formulaires
 1) Créer un magasin Pinia avec le nom "plat" pour les plats
    dans src/store/ et y ajouter le tableau des plats.
 
-2) Créer un getter pour récupérer les plats
-   et afficher ces derniers sur la page Exercice.vue à l'aide du getter
+2) Afficher les plats sur la page Exercice.vue à l'aide du useStore
 
 3) Ajouter la possibilité de supprimer un élément (clic sur bouton supprimer)
    en utilisant des actions et des mutations.
